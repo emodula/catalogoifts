@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Catalogo</title>
+<style type="text/css">
+	li a {
+		cursor: pointer;
+	}
+</style>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+
+<div id="wrapper" ng-controller="appController as app">
+   
+        <div id="sidebar-wrapper" ng-show="app.login">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    
+                </li>
+                <li>
+                    <a href="#!producto">Productos</a>
+                </li>
+                <li>
+                    <a href="#!promocion">Promociones</a>
+                </li>
+                <li>
+                    <a href="#!ofertas">Ofertas</a>
+                </li>
+                <li>
+                  <a href="#!estadisticas">Estadisticas</a>
+               </li>   
+                <li>
+                    <a href="#!sucursales">Sucursales</a>
+                </li>
+                <li>
+                    <a href="#!proveedores">Proveedores</a>
+                </li>                
+                <li>
+                    <a href="#!legales">Legales</a>
+                </li>
+                <li>
+                    <a href="#!contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div ng-view></div>
+</div>
+               
+<!-- Controllers -->       
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/controllers/charts.controller.js"></script>
+<script type="text/javascript" src="js/controllers/producto.controller.js"></script>
+<script type="text/javascript" src="js/controllers/proveedor.cotroller.js"></script>
+<script type="text/javascript" src="js/controllers/sucursal.controller.js"></script>
+<script type="text/javascript" src="js/controllers/legales.controller.js"></script>
+<script type="text/javascript" src="js/controllers/promocion.controller.js"></script>
+<script type="text/javascript" src="js/controllers/ofertas.controller.js"></script>
+
+<!-- Services -->
+<script type="text/javascript" src="js/components/service/ajax.service.js"></script>
+<script type="text/javascript" src="js/components/service/charts.service.js"></script>
+<script type="text/javascript" src="js/components/service/promocion.service.js"></script>
+<script type="text/javascript" src="js/components/service/producto.service.js"></script>
+<script type="text/javascript" src="js/components/service/ofertas.service.js"></script>
+<script type="text/javascript" src="js/components/service/legales.service.js"></script>
+<script type="text/javascript" src="js/components/service/sucursal.service.js"></script>
+
+<!-- Factories -->
+
+<script type="text/javascript" src="js/components/factory/constant.factory.js"></script>
+<script type="text/javascript" src="js/components/factory/utils.factory.js"></script>
+
+
+</body>
+</html>
